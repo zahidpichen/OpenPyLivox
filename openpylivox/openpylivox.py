@@ -1,27 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-
-Started on Mon. May 13th 2019
-
-@author: Ryan Brazeal
-@email: ryan.brazeal@ufl.edu
-
-Program Name: openpylivox.py
-Version: 1.1.0
-
-Description: Python3 driver for UDP Communications with Lixov Lidar sensors
-
-Livox SDK link: https://github.com/Livox-SDK/Livox-SDK/wiki/Livox-SDK-Communication-Protocol
-
-Change Log:
-    - v1.0.0 released - Sept. 13th 2019
-    - v1.0.1 released - May 27th 2020
-    - v1.0.2 and v1.0.3 released - May 29th 2020
-    - v1.1.0 released - Sept. 11th 2020 (NEVER FORGET!)
-    
-"""
-
 # standard modules
 import binascii
 import select
@@ -1733,7 +1709,7 @@ class openpylivox(object):
     def _disconnectSensor(self):
 
         self._waitForIdle()
-        self._cmdSocket.sendto(self._CMD_DISCONNECT, (self._sensorIP, 65000))
+        self._cmdSocket.sendto(self._CMD_DISCONNECT, (self._sensorIP, 56401))
 
         # check for proper response from disconnect request
         if select.select([self._cmdSocket], [], [], 0.1)[0]:
