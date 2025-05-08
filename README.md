@@ -1,5 +1,5 @@
 use this link for fast use  
-`pip install git+https://github.com/zhaidpichen/openpylivox.git`
+`pip install git+https://github.com/zahidpichen/openpylivox.git`
 
 
 
