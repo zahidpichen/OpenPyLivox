@@ -1,3 +1,9 @@
+use this link for fast use  
+`pip install git+https://github.com/zhaidpichen/openpylivox.git`
+
+
+
+---
 <img width="275px" src="./images/OPL_logo2_sm.png">
 
 <hr>
